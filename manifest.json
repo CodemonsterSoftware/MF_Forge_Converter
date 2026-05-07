@@ -9,8 +9,7 @@
     "template": "forge/convert.html",
     "main": "main.py",
     "enabled": true,
-    "repository": "https://github.com/CodemonsterSoftware/MF_Forge_Converter",
-    "download_url": "https://github.com/CodemonsterSoftware/MF_Forge_Converter/releases/latest/download/converter.zip",
+    "download": "https://github.com/CodemonsterSoftware/MF_Forge_Converter/archive/refs/tags/v1.0.0.zip",
     "dependencies": {
         "pip": []
     }

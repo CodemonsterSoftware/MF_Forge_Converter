@@ -6,11 +6,23 @@
     "description": "Convert meshes to solid STEP files.",
     "icon": "bi-arrow-left-right",
     "backend": "python",
-    "template": "forge/convert.html",
+    "template": "Converter/ui.html",
     "main": "main.py",
     "enabled": true,
     "download": "https://github.com/CodemonsterSoftware/MF_Forge_Converter/archive/refs/tags/v1.0.0.zip",
     "dependencies": {
-        "pip": []
-    }
+        "pip": [],
+        "services": ["blender"]
+    },
+    "quick_actions": [
+        {
+            "id": "convert",
+            "name": "Convert Format",
+            "icon": "bi-arrow-left-right",
+            "sub_actions": [
+                { "id": "convert_obj", "name": "To OBJ" },
+                { "id": "convert_step", "name": "To STEP" }
+            ]
+        }
+    ]
 }
